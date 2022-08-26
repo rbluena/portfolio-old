@@ -1,12 +1,12 @@
-import { DefaultTheme } from "styled-components";
+import { DefaultTheme } from 'styled-components';
 
 const theme: DefaultTheme = {
-  title: "light",
+  title: 'light',
   colors: {
-    primary: "",
-    secondary: "",
-    background: "",
-    text: "",
+    primary: '',
+    secondary: '',
+    background: '',
+    text: '',
   },
 };
 
