@@ -1,7 +1,7 @@
-import type { AppProps } from "next/app";
-import { ThemeWrapper } from "../hooks/theme";
+import type { AppProps } from 'next/app';
+import { ThemeWrapper } from '../hooks/theme';
 
-import Header from "../components/Header";
+import Header from '../components/Header';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
