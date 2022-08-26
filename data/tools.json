@@ -1,0 +1,14 @@
+{
+  "data": {
+    "design": [{ "name": "Figma" }],
+    "development": [
+      { "name": "VSCode" },
+      { "name": "Git" },
+      { "name": "Chrome DevTools" },
+      { "name": "Postman" },
+      { "name": "HTTPie" }
+    ],
+    "communication": [{ "name": "slack" }],
+    "agile": [{ "name": "JIRA" }, { "name": "Notion Kanban" }]
+  }
+}

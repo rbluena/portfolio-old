@@ -1,0 +1,59 @@
+{
+  "data": {
+    "bejamas": {
+      "company": "Bejemas",
+      "position": "Frontend Developer",
+      "location": "Remote",
+      "from": "Sep 2021",
+      "to": "Apr 2022",
+      "image": ""
+    },
+    "asteyo": {
+      "company": "Asteyo",
+      "position": "Founder & CEO",
+      "location": "Remote",
+      "type": "Seasonal",
+      "from": "Nov 2020",
+      "to": "June 2021",
+      "project": "Asteyo - Bajeti, Asteyo - Time Management",
+      "url": "",
+      "image": "asteyo.png"
+    },
+    "am": {
+      "company": "AM2Studio",
+      "position": "Front-end Developer",
+      "location": "Remote",
+      "type": "Contract",
+      "from": "Jul 2018",
+      "to": "Mar 2020",
+      "image": "am2studio.svg"
+    },
+    "myzone": {
+      "company": "MyZone Media Inc",
+      "position": "Front-end Developer",
+      "location": "Remote",
+      "type": "Contract",
+      "from": "Jul 2018",
+      "to": "Mar 2020",
+      "image": "myzone.svg"
+    },
+    "cloudboost": {
+      "company": "HackerBay Inc",
+      "position": "Software Developer",
+      "location": "Dar Es Salaam, Tanzania",
+      "type": "Contract",
+      "from": "Nov 2017",
+      "to": "June 2018",
+      "image": "hackerbay.svg"
+    },
+    "amazon": {
+      "company": "The Amazon College",
+      "position": "Computer Tutor",
+      "location": "Dar Es Salaam, Tanzania",
+      "type": "Contract",
+      "from": "May 2013",
+      "to": "Oct 2015",
+      "url": ""
+    }
+  }
+}
