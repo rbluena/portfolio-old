@@ -1,6 +1,6 @@
-import { useState } from "react";
-import Switcher from "react-switch";
-import { Wrapper } from "./header.style";
+import { useState } from 'react';
+import Switcher from 'react-switch';
+import { Wrapper } from './header.style';
 
 const Header = () => {
   const [themeSwitch, setThemeSwitch] = useState(false);
