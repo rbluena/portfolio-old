@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import meData from '@app/data/me';
+import meData from '@app/data/me.json';
 
 interface MetaType {
   name?: string;

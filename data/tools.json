@@ -3,6 +3,7 @@
     "design": [{ "name": "Figma" }],
     "development": [
       { "name": "VSCode" },
+      { "name": "Ubuntu" },
       { "name": "Git" },
       { "name": "Chrome DevTools" },
       { "name": "Postman" },
