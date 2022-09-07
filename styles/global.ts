@@ -1,21 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
+import { normalize } from 'styled-normalize';
 
 export default createGlobalStyle`
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
+  ${normalize}
 
  body {
+  font-family: ${({ theme }) => theme.typography.font.primary};
+  
      background: #f5f5f5;
      font-size: 14px;
      font-family: sans-serif;
      color: #333;
- }
-
- a {
-    text-decoration: none;
  }
 
  @media (prefers-color-scheme: dark) {
