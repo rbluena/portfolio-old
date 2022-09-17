@@ -7,6 +7,7 @@ export default createGlobalStyle`
  body {
     font-family: ${({ theme }) => theme.typography.font.primary};
     background: #f5f5f5;
+    font-weight: ${({ theme }) => theme.typography.weight.normal};
     font-size: 14px;
     color: #333;
  }

@@ -42,10 +42,6 @@ class AppDocument extends Document {
     return (
       <Html>
         <Head>
-          <link
-            href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
-            rel="stylesheet"
-          />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
@@ -53,7 +49,7 @@ class AppDocument extends Document {
             crossOrigin=""
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;1,300;1,400&family=The+Nautigal:wght@400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Poppins:wght@200;300;400;500;700;900&family=The+Nautigal:wght@400;700&display=swap"
             rel="stylesheet"
           />
         </Head>

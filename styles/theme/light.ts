@@ -1,11 +1,15 @@
 import { DefaultTheme } from 'styled-components';
 
+// font-family: 'Inter', sans-serif;
+// font-family: 'Poppins', sans-serif;
+// font-family: 'The Nautigal', cursive;
+
 const theme: DefaultTheme = {
   title: 'light',
 
   typography: {
     font: {
-      primary: "'Source Sans Pro', Arial, Verdana, sans-serif",
+      primary: "'Poppins', Arial, sans-serif",
       heading: '',
     },
     size: {
