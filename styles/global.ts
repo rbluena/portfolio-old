@@ -5,12 +5,10 @@ export default createGlobalStyle`
   ${normalize}
 
  body {
-  font-family: ${({ theme }) => theme.typography.font.primary};
-  
-     background: #f5f5f5;
-     font-size: 14px;
-     font-family: sans-serif;
-     color: #333;
+    font-family: ${({ theme }) => theme.typography.font.primary};
+    background: #f5f5f5;
+    font-size: 14px;
+    color: #333;
  }
 
  @media (prefers-color-scheme: dark) {

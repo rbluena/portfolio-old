@@ -5,7 +5,7 @@ const theme: DefaultTheme = {
 
   typography: {
     font: {
-      primary: 'Arial, Verdana, sans-serif',
+      primary: "'Source Sans Pro', Arial, Verdana, sans-serif",
       heading: '',
     },
     size: {
