@@ -4,16 +4,32 @@ export const Wrapper = styled.div`
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: ${({ theme }) => theme.color.bgPrimary};
 `;
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  display: flex;
 
-export const Title = styled.h1`
-  stroke: 1px solid ${({ theme }) => theme.color.textPrimary};
-  font-weight: ${({ theme }) => theme.typography.weight.bold};
+  @media ${({ theme }) => theme.mediaQuery.sm} {
+    flex-direction: column;
+  }
 `;
 
-export const Heading = styled.h3``;
+export const LeftContainer = styled.div`
+  flex: 1.5;
+  background-color: ${({ theme }) => theme.color.blue[900]};
+  height: 100px;
 
-export const Social = styled.div``;
+  @media ${({ theme }) => theme.mediaQuery.sm} {
+    flex: 1;
+  }
+`;
+
+export const RightContainer = styled.div`
+  background-color: ${({ theme }) => theme.color.pink[700]};
+  flex: 1;
+  height: 100px;
+`;
