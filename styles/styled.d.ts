@@ -13,6 +13,7 @@ declare module 'styled-components' {
         xs: string;
         sm: string;
         base: string;
+        medium: string;
         lg: string;
         xl: string;
         xxl: string;

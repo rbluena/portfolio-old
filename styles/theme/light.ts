@@ -16,6 +16,7 @@ const theme: DefaultTheme = {
       xxl: '6rem',
       xl: '4rem',
       lg: '2rem',
+      medium: '1.5rem',
       base: '1rem',
       sm: '0.9rem',
       xs: '0.75',

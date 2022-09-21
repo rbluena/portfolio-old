@@ -6,7 +6,7 @@ const LeftContent = () => {
   return (
     <LeftContainer>
       <Paragraph size="sm" variant="light">
-        Hello! Meet
+        Meet
       </Paragraph>
       <PageTitle size="xxl" variant="tertiary">
         Rabii Luena

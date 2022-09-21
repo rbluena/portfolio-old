@@ -52,7 +52,7 @@ const dynamicFontColor = ({ theme, variant = 'default' }: FontInterface) => {
 
 const dynamyFontSize = ({ theme, size = 'base' }: FontInterface) => css`
   font-size: ${theme.typography.size[size]};
-  line-height: ${parseInt(theme.typography.size[size], 10) * 1.4}rem;
+  line-height: ${parseFloat(theme.typography.size[size]) * 1.4}rem;
 `;
 
 export const Container = styled.div`
