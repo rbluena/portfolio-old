@@ -13,6 +13,7 @@ const theme: DefaultTheme = {
       heading: '',
     },
     size: {
+      xxl: '6rem',
       xl: '4rem',
       lg: '2rem',
       base: '1rem',
@@ -39,11 +40,23 @@ const theme: DefaultTheme = {
   },
 
   color: {
-    bgPrimary: '#f5f5f5',
-    bgSecondary: '',
-    textPrimary: '#000000',
-    textSecondary: '',
-    textMuted: '#999999',
+    blue: {
+      900: '#03045E',
+    },
+    green: {
+      300: '#80E376',
+    },
+    pink: {
+      700: '#E94560',
+    },
+    light: {
+      100: '#f5f5f5;',
+      200: '#E7E7E7',
+      800: '#6B6C7B',
+    },
+    dark: {
+      900: '#000',
+    },
   },
 
   space: {

@@ -14,6 +14,7 @@ declare module 'styled-components' {
         base: string;
         lg: string;
         xl: string;
+        xxl: string;
       };
       weight: {
         light: number;
@@ -35,11 +36,23 @@ declare module 'styled-components' {
     };
 
     color: {
-      bgPrimary: string;
-      bgSecondary: string;
-      textPrimary: string;
-      textSecondary: string;
-      textMuted?: string;
+      blue: {
+        900: string;
+      };
+      green: {
+        300: string;
+      };
+      pink: {
+        700: string;
+      };
+      light: {
+        100: string;
+        200: string;
+        800: string;
+      };
+      dark: {
+        900: string;
+      };
     };
 
     space: {
