@@ -6,9 +6,9 @@ export const Wrapper = styled.div`
   width: 100%;
 `;
 
-export const Container = styled.div`
+export const ContentWrapper = styled.div`
   width: 100%;
-  position: relative;
+  position: absolute;
   z-index: 1;
   top: 0;
   display: flex;
@@ -21,8 +21,10 @@ export const Container = styled.div`
 export const LeftContainer = styled.div`
   flex: 1.5;
   background-color: ${({ theme }) => theme.color.blue[900]};
-  height: 100px;
-
+  padding-left: ${({ theme }) => theme.spacing.xxl};
+  padding-top: ${({ theme }) => theme.spacing.xxxl};
+  color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
   @media ${({ theme }) => theme.mediaQuery.sm} {
     flex: 1;
   }
@@ -30,6 +32,9 @@ export const LeftContainer = styled.div`
 
 export const RightContainer = styled.div`
   background-color: ${({ theme }) => theme.color.pink[700]};
+  padding-right: ${({ theme }) => theme.spacing.xxl};
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  min-height: 100vh;
   flex: 1;
   height: 100px;
 `;

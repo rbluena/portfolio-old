@@ -5,6 +5,7 @@ export const Wrapper = styled.nav``;
 
 export const Container = styled(ShareContainer)`
   position: relative;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;

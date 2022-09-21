@@ -5,16 +5,16 @@ import Navbar from '@app/components/Navbar';
 import LeftContent from './LeftContent';
 import RightContent from './RightContent';
 
-import { Wrapper, Container as HeaderContainer } from './header.style';
+import { Wrapper, ContentWrapper } from './header.style';
 
 const Header: React.FC = () => (
   <Wrapper>
     <Navbar />
 
-    <HeaderContainer>
+    <ContentWrapper>
       <LeftContent />
       <RightContent />
-    </HeaderContainer>
+    </ContentWrapper>
   </Wrapper>
 );
 

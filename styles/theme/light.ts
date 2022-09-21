@@ -50,7 +50,7 @@ const theme: DefaultTheme = {
       700: '#E94560',
     },
     light: {
-      100: '#f5f5f5;',
+      100: '#ffffff;',
       200: '#E7E7E7',
       800: '#6B6C7B',
     },
@@ -66,6 +66,7 @@ const theme: DefaultTheme = {
     lg: '2rem',
     xl: '4rem',
     xxl: '6rem',
+    xxxl: '8rem',
   },
 };
 

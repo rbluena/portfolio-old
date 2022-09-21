@@ -1,4 +1,5 @@
 import 'styled-components';
+
 declare module 'styled-components' {
   export interface DefaultTheme {
     title: string;
@@ -55,13 +56,14 @@ declare module 'styled-components' {
       };
     };
 
-    space: {
+    spacing: {
       xs: string;
       sm: string;
       base: string;
       lg: string;
       xl: string;
       xxl: string;
+      xxxl: string;
     };
   }
 }
