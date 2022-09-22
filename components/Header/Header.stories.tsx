@@ -10,5 +10,3 @@ export default {
 export const Template: ComponentStory<typeof Header> = (args) => (
   <Header {...args} />
 );
-
-// export const Main = Template.bind({});

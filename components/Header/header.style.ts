@@ -40,3 +40,7 @@ export const RightContainer = styled.section`
   flex: 1;
   height: 100px;
 `;
+
+export const Social = styled.div`
+  display: flex;
+`;
