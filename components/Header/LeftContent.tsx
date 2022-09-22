@@ -5,15 +5,15 @@ import { LeftContainer } from './header.style';
 const LeftContent = () => {
   return (
     <LeftContainer>
-      <Paragraph size="sm" variant="light">
-        Meet
+      <Paragraph as="span" size="sm" variant="light">
+        Hello! Meet
       </Paragraph>
       <PageTitle size="xxl" variant="tertiary">
-        Rabii Luena
+        rabii luena
       </PageTitle>
       <Paragraph size="lg" variant="light">
         Software engineer building scalable and perfomant frontend and mobile
-        applications using modern technologies.
+        applications using cutting-edge tools and technologies.
       </Paragraph>
     </LeftContainer>
   );
