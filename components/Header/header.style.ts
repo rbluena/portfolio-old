@@ -4,11 +4,12 @@ export const Wrapper = styled.div`
   margin: 0;
   padding: 0;
   width: 100%;
+  position: relative;
 `;
 
 export const ContentWrapper = styled.div`
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
   z-index: 1;
   top: 0;
   display: flex;

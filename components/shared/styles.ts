@@ -50,7 +50,7 @@ const dynamicFontColor = ({ theme, variant = 'default' }: FontInterface) => {
   `;
 };
 
-const dynamyFontSize = ({ theme, size = 'base' }: FontInterface) => css`
+const dynamicFontSize = ({ theme, size = 'base' }: FontInterface) => css`
   font-size: ${theme.typography.size[size]};
   line-height: ${parseFloat(theme.typography.size[size]) * 1.4}rem;
 `;
@@ -66,27 +66,32 @@ export const Container = styled.div`
   }
 `;
 
+export const Text = styled.p`
+  ${dynamicFontColor}
+  ${dynamicFontSize}
+`;
+
 export const PageTitle = styled.h1`
   ${dynamicFontColor}
-  ${dynamyFontSize}
+  ${dynamicFontSize}
 `;
 
 export const Heading = styled.h2`
   ${dynamicFontColor}
-  ${dynamyFontSize}
+  ${dynamicFontSize}
 `;
 
 export const Subheading = styled.h3`
   ${dynamicFontColor}
-  ${dynamyFontSize}
+  ${dynamicFontSize}
 `;
 
 export const Title = styled.h1`
   ${dynamicFontColor}
-  ${dynamyFontSize}
+  ${dynamicFontSize}
 `;
 
 export const Paragraph = styled.p`
   ${dynamicFontColor}
-  ${dynamyFontSize}
+  ${dynamicFontSize}
 `;
