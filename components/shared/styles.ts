@@ -1,5 +1,4 @@
 import styled, { css, DefaultTheme } from 'styled-components';
-import framer from 'framer-motion';
 
 type Colors =
   | 'primary'
@@ -61,8 +60,8 @@ export const Container = styled.div`
   padding-right: ${({ theme }) => theme.spacing.base};
 
   @media ${({ theme }) => theme.mediaQuery.lg} {
-    padding-left: ${({ theme }) => theme.spacing.xxl};
-    padding-right: ${({ theme }) => theme.spacing.xxl};
+    padding-left: ${({ theme }) => theme.spacing.xl};
+    padding-right: ${({ theme }) => theme.spacing.xl};
     max-width: 1440px;
   }
 `;

@@ -1,21 +1,18 @@
-import { Container } from '@app/components/shared/styles';
-import { Heading, Paragraph } from '../shared/styles';
-import { RightContainer } from './header.style';
+import { Text } from '@app/components/shared/styles';
+import { RightContainer, DescriptionWrapper } from './header.style';
 
 const RightContent = () => {
   return (
     <RightContainer>
-      <Container>
-        <Heading size="xl" variant="primary">
-          about me
-        </Heading>
-        <Paragraph size="medium" variant="light">
-          Lorem is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry standard dummy text ever since the
-          1500s, when an unknown printer took a galley of type and scrambled it
-          to make a type specimen book.
-        </Paragraph>
-      </Container>
+      <Text size="xl" variant="primary">
+        about me
+      </Text>
+      <DescriptionWrapper>
+        <Text size="medium" variant="light">
+          Software engineer building scalable and perfomant frontend and mobile
+          applications using cutting-edge tools and technologies.
+        </Text>
+      </DescriptionWrapper>
     </RightContainer>
   );
 };

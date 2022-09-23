@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Container } from '@app/components/shared/styles';
 
 export const Wrapper = styled.header`
   margin: 0;
@@ -11,40 +12,41 @@ export const ContentWrapper = styled.div`
   width: 100%;
   z-index: 1;
   top: 0;
-  display: flex;
-  flex-direction: column;
 
   @media ${({ theme }) => theme.mediaQuery.lg} {
-    /* position: absolute; */
-    flex-direction: row;
+    display: flex;
+    min-height: 100vh;
   }
 `;
 
-export const LeftContainer = styled.section`
-  flex: 1.5;
+export const LeftContainer = styled(Container)`
   background-color: ${({ theme }) => theme.color.blue[900]};
-  color: white;
   padding-top: ${({ theme }) => theme.spacing.xxxl};
+  padding-bottom: ${({ theme }) => theme.spacing.xxl};
+  color: white;
 
   @media ${({ theme }) => theme.mediaQuery.lg} {
-    /* padding-left: ${({ theme }) => theme.spacing.xxl}; */
-    flex: 2;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    padding-right: 2em;
+    flex: 1.5;
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
   }
 `;
 
-export const RightContainer = styled.section`
+export const RightContainer = styled(Container)`
   background-color: ${({ theme }) => theme.color.pink[700]};
-  min-height: 100vh;
-  height: 100px;
-  padding-top: ${({ theme }) => theme.spacing.xxxl};
+  padding-bottom: ${({ theme }) => theme.spacing.xxl};
+  padding-top: ${({ theme }) => theme.spacing.xxl};
 
   @media ${({ theme }) => theme.mediaQuery.lg} {
-    padding-right: ${({ theme }) => theme.spacing.xxl};
-    padding-left: ${({ theme }) => theme.spacing.lg};
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
     flex: 1;
+    padding-top: ${({ theme }) => theme.spacing.xxxl};
+    padding-left: 2em;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
   }
+`;
+
+export const DescriptionWrapper = styled.div`
+  padding-top: 3em;
 `;
 
 export const Social = styled.div`

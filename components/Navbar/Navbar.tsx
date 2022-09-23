@@ -16,7 +16,7 @@ const Navbar = () => {
         setIsScrolled(false);
       }
     });
-  }, []);
+  }, [scrollY]);
 
   return (
     <Wrapper

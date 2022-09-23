@@ -11,7 +11,7 @@
     },
     "asteyo": {
       "company": "Asteyo",
-      "position": "Founder & CEO",
+      "position": "Founder",
       "location": "Remote",
       "type": "Seasonal",
       "from": "Nov 2020",
@@ -19,11 +19,13 @@
       "project": "Asteyo - Bajeti, Asteyo - Time Management",
       "url": "",
       "image": "asteyo.png",
-      "description": ["Working with amazing details.."]
+      "description": [
+        "Built few products to validate market fit. It wasn't successfull."
+      ]
     },
     "am": {
       "company": "AM2Studio",
-      "position": "Front-end Developer",
+      "position": "Frontend Developer",
       "location": "Remote",
       "type": "Contract",
       "from": "Jul 2018",
