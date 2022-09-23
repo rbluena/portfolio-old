@@ -1,8 +1,12 @@
 import { Wrapper } from './styles';
 
-const HamburgerMenu = () => {
+interface Props {
+  color?: string;
+}
+
+const HamburgerMenu = ({ color }: Props) => {
   return (
-    <Wrapper>
+    <Wrapper color={color}>
       <span />
       <span />
     </Wrapper>

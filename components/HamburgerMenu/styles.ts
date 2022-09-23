@@ -15,7 +15,7 @@ export const Wrapper = styled.button`
     display: block;
     height: 4px;
     width: 50px;
-    background-color: black;
+    background-color: ${({ color }) => color};
 
     &:last-child {
       width: 35px;
