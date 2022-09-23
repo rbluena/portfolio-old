@@ -6,7 +6,8 @@
       "location": "Remote",
       "from": "Sep 2021",
       "to": "Apr 2022",
-      "image": ""
+      "image": "",
+      "description": ["Working with amazing details.."]
     },
     "asteyo": {
       "company": "Asteyo",
@@ -17,7 +18,8 @@
       "to": "June 2021",
       "project": "Asteyo - Bajeti, Asteyo - Time Management",
       "url": "",
-      "image": "asteyo.png"
+      "image": "asteyo.png",
+      "description": ["Working with amazing details.."]
     },
     "am": {
       "company": "AM2Studio",
@@ -26,7 +28,8 @@
       "type": "Contract",
       "from": "Jul 2018",
       "to": "Mar 2020",
-      "image": "am2studio.svg"
+      "image": "am2studio.svg",
+      "description": ["Working with amazing details.."]
     },
     "myzone": {
       "company": "MyZone Media Inc",
@@ -35,7 +38,8 @@
       "type": "Contract",
       "from": "Jul 2018",
       "to": "Mar 2020",
-      "image": "myzone.svg"
+      "image": "myzone.svg",
+      "description": ["Working with amazing details.."]
     },
     "cloudboost": {
       "company": "HackerBay Inc",
@@ -44,7 +48,8 @@
       "type": "Contract",
       "from": "Nov 2017",
       "to": "June 2018",
-      "image": "hackerbay.svg"
+      "image": "hackerbay.svg",
+      "description": ["Working with amazing details.."]
     },
     "amazon": {
       "company": "The Amazon College",
@@ -53,7 +58,8 @@
       "type": "Contract",
       "from": "May 2013",
       "to": "Oct 2015",
-      "url": ""
+      "url": "",
+      "description": ["Working with amazing details.."]
     }
   }
 }

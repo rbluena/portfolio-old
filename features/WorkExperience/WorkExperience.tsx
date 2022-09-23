@@ -46,11 +46,9 @@ const WorkExperience = () => {
                 {item.from}-{item.to}
               </Text>
 
-              <Description>
-                Places I got an opportunity to work with. I am not sure if this
-                is what I was envision today. The challenge I have face in so
-                many levels.
-              </Description>
+              {item?.description.map((text: string, index: number) => {
+                return <Description key={index}>{text}</Description>;
+              })}
             </Tabs.Content>
           );
         })}
