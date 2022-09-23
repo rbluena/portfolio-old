@@ -43,7 +43,9 @@ const WorkExperience = () => {
                 {item.position}
               </Text>
               <Text size="sm" variant="muted">
-                {item.from}-{item.to}
+                <strong>
+                  {item.from}-{item.to}
+                </strong>
               </Text>
 
               {item?.description.map((text: string, index: number) => {

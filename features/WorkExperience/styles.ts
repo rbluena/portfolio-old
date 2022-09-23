@@ -4,14 +4,29 @@ import { TabProps } from './types';
 
 export const Wrapper = styled.div`
   display: flex;
-  padding: ${({ theme }) => theme.spacing.lg};
+  flex-direction: column;
+  margin-top: ${({ theme }) => theme.spacing.base};
+
+  @media ${({ theme }) => theme.mediaQuery.md} {
+    flex-direction: row;
+    padding: ${({ theme }) => theme.spacing.lg};
+  }
 `;
 
-export const ContentWrapper = styled.div``;
+export const ContentWrapper = styled.div`
+  width: 100%;
+  padding: ${({ theme }) => theme.spacing.lg} 0px;
+  color: white;
+
+  @media ${({ theme }) => theme.mediaQuery.lg} {
+    margin-left: ${({ theme }) => theme.spacing.xxl};
+    padding: 0px;
+  }
+`;
 
 export const Description = styled(Text)`
   padding: ${({ theme }) => theme.spacing.base} 0px;
-  max-width: 600px;
+  /* max-width: 600px; */
 `;
 
 export const Tabs: any = {};
@@ -21,11 +36,17 @@ Tabs.Content = styled.div<TabProps>`
 `;
 
 Tabs.List = styled.ul`
+  padding: 8px 0px;
   list-style: none;
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-  min-width: 200px;
+  gap: 12px;
+  overflow: auto;
+  white-space: nowrap;
+
+  @media ${({ theme }) => theme.mediaQuery.md} {
+    min-width: 200px;
+    flex-direction: column;
+  }
 `;
 
 Tabs.Nav = styled.li<TabProps>`

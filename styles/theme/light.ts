@@ -34,10 +34,10 @@ const theme: DefaultTheme = {
   },
 
   mediaQuery: {
-    xs: 'screen and (max-width: 320px)',
-    sm: 'screen and (max-width: 480px)',
-    md: 'screen and (max-width: 768px)',
-    lg: 'screen and (max-width: 1024px)',
+    xs: 'screen and (min-width: 320px)',
+    sm: 'screen and (min-width: 480px)',
+    md: 'screen and (min-width: 768px)',
+    lg: 'screen and (min-width: 1024px)',
   },
 
   color: {
