@@ -1,10 +1,15 @@
 import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { motion, useScroll } from 'framer-motion';
 import Logo from '@app/components/Logo';
 import HamburgerMenu from '@app/components/HamburgerMenu';
 import { Wrapper, Container, ScrollProgress } from './styles';
 
-const Navbar = () => {
+interface Props {
+  showHero: boolean;
+}
+
+const Navbar: React.FC<Props> = ({ showHero }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const { scrollY, scrollYProgress } = useScroll();
 
@@ -21,7 +26,7 @@ const Navbar = () => {
   return (
     <Wrapper
       style={
-        isScrolled
+        isScrolled || !showHero
           ? { background: 'white' }
           : { background: 'transparent', boxShadow: 'none' }
       }
@@ -34,8 +39,11 @@ const Navbar = () => {
         }}
       />
       <Container>
-        <Logo color={isScrolled ? '#03045E' : 'white'} />
-        <HamburgerMenu color={isScrolled ? '#03045E' : 'white'} />
+        <Link href="/">
+          <Logo color={isScrolled || !showHero ? '#03045E' : 'white'} />
+        </Link>
+
+        <HamburgerMenu color={isScrolled || !showHero ? '#03045E' : 'white'} />
       </Container>
     </Wrapper>
   );

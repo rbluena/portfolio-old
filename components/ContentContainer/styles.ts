@@ -13,6 +13,4 @@ export const Divider = styled.span`
   margin: ${({ theme }) => theme.spacing.base} 0px;
 `;
 
-export const ContentWrapper = styled(Container)`
-  border-bottom: 1px solid ${({ theme }) => theme.color.blue[900]};
-`;
+export const ContentWrapper = styled(Container)``;

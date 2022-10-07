@@ -4,14 +4,20 @@ import RightContent from './RightContent';
 
 import { Wrapper, ContentWrapper } from './header.style';
 
-const Header: React.FC = () => (
-  <Wrapper>
-    <Navbar />
+interface Props {
+  showHero: boolean;
+}
 
-    <ContentWrapper>
-      <LeftContent />
-      <RightContent />
-    </ContentWrapper>
+const Header: React.FC<Props> = ({ showHero }) => (
+  <Wrapper>
+    <Navbar showHero={showHero} />
+
+    {showHero && (
+      <ContentWrapper>
+        <LeftContent />
+        <RightContent />
+      </ContentWrapper>
+    )}
   </Wrapper>
 );
 

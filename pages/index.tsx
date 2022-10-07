@@ -8,7 +8,7 @@ import data from '~/data/contacts.json';
 
 const Home: NextPage = () => {
   return (
-    <Layout>
+    <Layout showHero>
       <SEO />
       <ContentContainer
         heading="projects"
