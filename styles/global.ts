@@ -26,7 +26,8 @@ export default createGlobalStyle`
     
     body {
       color: white;
-      background: black;
+      color: ${({ theme }) => theme.color.light[100]};
+      background: ${({ theme }) => theme.color.blue[900]};
     }
   }
 `;
