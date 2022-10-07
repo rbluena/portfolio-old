@@ -1,4 +1,5 @@
 import styled, { css, DefaultTheme } from 'styled-components';
+import Link from 'next/link';
 
 type Colors =
   | 'primary'
