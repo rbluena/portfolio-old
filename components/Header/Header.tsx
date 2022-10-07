@@ -2,7 +2,7 @@ import Navbar from '@app/components/Navbar';
 import LeftContent from './LeftContent';
 import RightContent from './RightContent';
 
-import { Wrapper, ContentWrapper } from './header.style';
+import { Wrapper, Hero } from './header.style';
 
 interface Props {
   showHero: boolean;
@@ -13,10 +13,10 @@ const Header: React.FC<Props> = ({ showHero }) => (
     <Navbar showHero={showHero} />
 
     {showHero && (
-      <ContentWrapper>
+      <Hero>
         <LeftContent />
         <RightContent />
-      </ContentWrapper>
+      </Hero>
     )}
   </Wrapper>
 );

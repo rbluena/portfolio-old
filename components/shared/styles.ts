@@ -52,7 +52,7 @@ const dynamicFontColor = ({ theme, variant = 'default' }: FontInterface) => {
 
 const dynamicFontSize = ({ theme, size = 'base' }: FontInterface) => css`
   font-size: ${theme.typography.size[size]};
-  line-height: ${parseFloat(theme.typography.size[size]) * 1.4}rem;
+  line-height: ${parseFloat(theme.typography.size[size]) * 1.3}rem;
 `;
 
 export const Container = styled.div`
@@ -73,25 +73,31 @@ export const Text = styled.p`
 
 export const PageTitle = styled.h1`
   ${dynamicFontColor}
-  ${dynamicFontSize}
-`;
+  font-size: ${({ theme }) => theme.typography.size.xl};
 
-export const Heading = styled.h2`
-  ${dynamicFontColor}
-  ${dynamicFontSize}
-`;
-
-export const Subheading = styled.h3`
-  ${dynamicFontColor}
-  ${dynamicFontSize}
+  @media ${({ theme }) => theme.mediaQuery.md} {
+    font-size: ${({ theme }) => theme.typography.size.xxl};
+  }
 `;
 
 export const Title = styled.h1`
   ${dynamicFontColor}
-  ${dynamicFontSize}
+  font-size: ${({ theme }) => theme.typography.size.lg};
+
+  @media ${({ theme }) => theme.mediaQuery.md} {
+    font-size: ${({ theme }) => theme.typography.size.xl};
+  }
 `;
 
-export const Paragraph = styled.p`
+export const Heading = styled.h2`
   ${dynamicFontColor}
-  ${dynamicFontSize}
+  font-size: ${({ theme }) => theme.typography.size.lg}
+
+  @media ${({ theme }) => theme.mediaQuery.md} {
+    font-size: ${({ theme }) => theme.typography.size.xl};
+  }
+`;
+
+export const Subheading = styled.h3`
+  ${dynamicFontColor}
 `;

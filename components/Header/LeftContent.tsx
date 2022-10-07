@@ -1,4 +1,4 @@
-import { Text } from '@app/components/shared/styles';
+import { PageTitle, Heading, Text } from '@app/components/shared/styles';
 import { LeftContainer } from './header.style';
 
 const LeftContent = () => {
@@ -7,14 +7,9 @@ const LeftContent = () => {
       <Text as="span" size="sm" variant="light">
         Hello! Meet
       </Text>
-      <Text as="h1" size="xxl" variant="tertiary">
-        rabii luena
-      </Text>
+      <PageTitle variant="tertiary">rabii luena</PageTitle>
       <br />
-      <Text size="xl" variant="light">
-        Frontend & <br />
-        Mobile Engineer
-      </Text>
+      <Heading variant="light">Frontend & Mobile Engineer</Heading>
     </LeftContainer>
   );
 };

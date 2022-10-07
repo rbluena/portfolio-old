@@ -8,10 +8,11 @@ export const Wrapper = styled.header`
   position: relative;
 `;
 
-export const ContentWrapper = styled.div`
+export const Hero = styled.div`
   width: 100%;
   z-index: 1;
   top: 0;
+  margin-bottom: ${({ theme }) => theme.spacing.xxl};
 
   @media ${({ theme }) => theme.mediaQuery.lg} {
     display: flex;

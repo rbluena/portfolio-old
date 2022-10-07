@@ -1,4 +1,4 @@
-import { Container, Text } from '@app/components/shared/styles';
+import { Container, Text, Title } from '@app/components/shared/styles';
 import { Wrapper, Divider, ContentWrapper } from './styles';
 
 interface Props {
@@ -20,7 +20,7 @@ const ContentContainer: React.FC<Props> = ({
   return (
     <Wrapper>
       <Container>
-        <Text
+        <Title
           as="h2"
           size="xl"
           variant="primary"
