@@ -2,7 +2,11 @@ import styled from 'styled-components';
 import { Container } from '../shared/styles';
 
 export const Wrapper = styled.section`
-  padding-bottom: ${({ theme }) => theme.spacing.xxxl};
+  padding: ${({ theme }) => theme.spacing.lg} 0;
+
+  @media ${({ theme }) => theme.mediaQuery.md} {
+    padding: ${({ theme }) => theme.spacing.xl} 0;
+  }
 `;
 
 export const Divider = styled.span`

@@ -5,17 +5,17 @@ import { TabProps } from './types';
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: ${({ theme }) => theme.spacing.base};
+  margin-top: ${({ theme }) => theme.spacing.lg};
 
   @media ${({ theme }) => theme.mediaQuery.md} {
     flex-direction: row;
-    padding: ${({ theme }) => theme.spacing.lg};
+    padding: 0 ${({ theme }) => theme.spacing.lg};
   }
 `;
 
 export const ContentWrapper = styled.div`
   width: 100%;
-  padding: ${({ theme }) => theme.spacing.lg} 0px;
+  // padding: ${({ theme }) => theme.spacing.lg} 0px;
   color: white;
 
   @media ${({ theme }) => theme.mediaQuery.lg} {

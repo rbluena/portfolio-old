@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   padding: ${({ theme }) => theme.spacing.lg} 0;
   display: flex;
   flex-direction: column;
-  gap: ${({ theme }) => theme.spacing.xl};
+  gap: ${({ theme }) => theme.spacing.lg};
 `;
 
 export const DirectContacts = styled.ul`
