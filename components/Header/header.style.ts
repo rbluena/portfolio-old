@@ -20,6 +20,24 @@ export const Hero = styled.div`
   }
 `;
 
+export const SkillIcons = styled.div`
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 4rem;
+
+  @media ${({ theme }) => theme.mediaQuery.md} {
+    gap: 32px;
+  }
+`;
+
+export const IconWrapper = styled.div`
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+`;
+
 export const LeftContainer = styled(Container)`
   background-color: ${({ theme }) => theme.color.blue[900]};
   padding-top: ${({ theme }) => theme.spacing.xxxl};

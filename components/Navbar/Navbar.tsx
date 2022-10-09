@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { motion, useScroll } from 'framer-motion';
-import Logo from '@app/components/Logo';
-import HamburgerMenu from '@app/components/HamburgerMenu';
+import Logo from '~/components/Logo';
+// import HamburgerMenu from '~/components/HamburgerMenu';
+// import Nav from '~/components/Nav';
 import { Wrapper, Container, ScrollProgress } from './styles';
 
 interface Props {
@@ -43,8 +44,10 @@ const Navbar: React.FC<Props> = ({ showHero }) => {
           <Logo color={isScrolled || !showHero ? '#03045E' : 'white'} />
         </Link>
 
-        <HamburgerMenu color={isScrolled || !showHero ? '#03045E' : 'white'} />
+        {/* <HamburgerMenu color={isScrolled || !showHero ? '#03045E' : 'white'} /> */}
       </Container>
+
+      {/* <Nav /> */}
     </Wrapper>
   );
 };
