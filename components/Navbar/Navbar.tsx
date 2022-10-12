@@ -41,7 +41,9 @@ const Navbar: React.FC<Props> = ({ showHero }) => {
       />
       <Container>
         <Link href="/">
-          <Logo color={isScrolled || !showHero ? '#03045E' : 'white'} />
+          <a title="Go to portfolio home page">
+            <Logo color={isScrolled || !showHero ? '#03045E' : 'white'} />
+          </a>
         </Link>
 
         {/* <HamburgerMenu color={isScrolled || !showHero ? '#03045E' : 'white'} /> */}
