@@ -3,16 +3,20 @@
     "bejamas": {
       "company": "Bejemas",
       "position": "Frontend Developer",
-      "location": "Remote",
+      "location": "Remote, Poland",
       "from": "Sep 2021",
       "to": "Apr 2022",
       "image": "",
-      "description": ["Working with amazing details.."]
+      "description": [
+        "I was part of agile team responsible for feature development and bug fixes.",
+        "Supported our clients rolling out features in every two weeks sprint.",
+        "Fixed several issues in prouduction."
+      ]
     },
     "asteyo": {
       "company": "Asteyo",
       "position": "Founder",
-      "location": "Remote",
+      "location": "Nairobi, Kenya",
       "type": "Seasonal",
       "from": "Nov 2020",
       "to": "June 2021",
@@ -20,13 +24,14 @@
       "url": "",
       "image": "asteyo.png",
       "description": [
-        "Built few products to validate market fit. It wasn't successfull."
+        "Built two products which ended into market validation stage.",
+        "Did the branding and UI designs for the products using Figma."
       ]
     },
     "am": {
       "company": "AM2Studio",
       "position": "Frontend Developer",
-      "location": "Remote",
+      "location": "Remote, Croatia",
       "type": "Contract",
       "from": "Jul 2018",
       "to": "Mar 2020",
@@ -36,7 +41,7 @@
     "myzone": {
       "company": "MyZone Media Inc",
       "position": "Frontend Developer",
-      "location": "Remote",
+      "location": "Remote,Canada",
       "type": "Contract",
       "from": "Jul 2018",
       "to": "Mar 2020",
@@ -46,7 +51,7 @@
     "cloudboost": {
       "company": "HackerBay Inc",
       "position": "Software Developer",
-      "location": "Dar Es Salaam, Tanzania",
+      "location": "Remote, India",
       "type": "Contract",
       "from": "Nov 2017",
       "to": "June 2018",
