@@ -74,19 +74,11 @@ export const Text = styled.p`
 export const PageTitle = styled.h1`
   ${dynamicFontColor}
   font-size: ${({ theme }) => theme.typography.size.xl};
-
-  @media ${({ theme }) => theme.mediaQuery.md} {
-    font-size: ${({ theme }) => theme.typography.size.xxl};
-  }
 `;
 
 export const Title = styled.h1`
   ${dynamicFontColor}
   font-size: ${({ theme }) => theme.typography.size.lg};
-
-  @media ${({ theme }) => theme.mediaQuery.md} {
-    font-size: ${({ theme }) => theme.typography.size.xl};
-  }
 `;
 
 export const Heading = styled.h2`

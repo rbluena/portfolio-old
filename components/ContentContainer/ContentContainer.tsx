@@ -22,7 +22,6 @@ const ContentContainer: React.FC<Props> = ({
       <Container>
         <Title
           as="h2"
-          size="xl"
           variant="primary"
           dangerouslySetInnerHTML={{ __html: splitHeading }}
         />
