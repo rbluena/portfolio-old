@@ -1,31 +1,43 @@
 import { useState } from 'react';
 import { Text } from '@app/components/shared/styles';
-import { Wrapper, ContentWrapper, Description, Tabs } from './styles';
+import {
+  Wrapper,
+  ContentWrapper,
+  Description,
+  Tabs,
+  SubheadingSection,
+} from './styles';
 
 import workData from '@app/data/work.json';
 
 const WorkExperience = () => {
   const [activeTabKey, setActiveTabKey] = useState<string | null>('bejamas');
-
   const workEntries = Object.entries(workData.data);
 
   return (
     <Wrapper>
       <Tabs.List role="tablist">
-        {workEntries.map(([key, item]) => {
+        {workEntries.map(([key, item], index) => {
           const contentKey = key.toLowerCase();
           const isActive = activeTabKey?.toLocaleLowerCase() === contentKey;
 
           return (
-            <Tabs.Nav key={contentKey} role="presentation" isActive={isActive}>
+            <Tabs.NavItem
+              key={contentKey}
+              role="tab"
+              isActive={isActive}
+              aria-posinset={index}
+              aria-selected={isActive}
+              aria-controls={key}
+            >
               <button
+                type="button"
                 onClick={() => setActiveTabKey(contentKey)}
                 key={key}
-                role="presentation"
               >
                 {item.company}
               </button>
-            </Tabs.Nav>
+            </Tabs.NavItem>
           );
         })}
       </Tabs.List>
@@ -33,24 +45,41 @@ const WorkExperience = () => {
       <ContentWrapper>
         {workEntries.map(([key, item]) => {
           const contentKey = key.toLowerCase();
+          const isActivePanel =
+            activeTabKey?.toLocaleLowerCase() === contentKey;
 
           return (
             <Tabs.Content
+              id={key}
               key={contentKey}
-              isActive={activeTabKey?.toLocaleLowerCase() === contentKey}
+              isActive={isActivePanel}
+              aria-hidden={!isActivePanel}
+              role="tabpanel"
             >
               <Text size="lg" variant="primary">
                 {item.position}
               </Text>
-              <Text size="sm" variant="muted">
-                <strong>
-                  {item.from}-{item.to}
-                </strong>
-              </Text>
+              <SubheadingSection>
+                <Text size="sm">
+                  <strong>
+                    {item.from}-{item.to}
+                  </strong>
+                </Text>
+                <div className="divider" />
+                <Text variant="muted" size="sm">
+                  {item.location}
+                </Text>
+              </SubheadingSection>
 
-              {item?.description.map((text: string, index: number) => {
-                return <Description key={index}>{text}</Description>;
-              })}
+              <Description>
+                {item?.description.map((text, index) => {
+                  return (
+                    <li key={index}>
+                      <Text as="span">{text}</Text>
+                    </li>
+                  );
+                })}
+              </Description>
             </Tabs.Content>
           );
         })}

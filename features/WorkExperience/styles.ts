@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Text } from '@app/components/shared/styles';
 import { TabProps } from './types';
 
 export const Wrapper = styled.div`
@@ -24,9 +23,36 @@ export const ContentWrapper = styled.div`
   }
 `;
 
-export const Description = styled(Text)`
+export const Description = styled.ul`
   padding: ${({ theme }) => theme.spacing.base} 0px;
-  /* max-width: 600px; */
+
+  li {
+    list-type-style: disc;
+    line-height: 2.2em;
+  }
+`;
+
+export const SubheadingSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+
+  .divider {
+    display: none;
+  }
+
+  @media ${({ theme }) => theme.mediaQuery.md} {
+    flex-direction: row;
+    align-items: center;
+
+    .divider {
+      display: block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: gray;
+    }
+  }
 `;
 
 export const Tabs: any = {};
@@ -49,7 +75,12 @@ Tabs.List = styled.ul`
   }
 `;
 
-Tabs.Nav = styled.li<TabProps>`
+Tabs.NavItem = styled.li<TabProps>`
+  &:focus {
+    outline-color: red;
+    outline-width: 2px;
+  }
+
   button {
     background: transparent;
     outline: none;
@@ -75,7 +106,8 @@ Tabs.Nav = styled.li<TabProps>`
       font-weight: bold;
     }
 
-    &:hover::after {
+    &:hover::after,
+    &:focus::after {
       width: 100%;
     }
   }
