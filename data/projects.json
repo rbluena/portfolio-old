@@ -2,10 +2,39 @@
   "data": {
     "portfolio": {
       "title": "Portfolio",
-      "description": "This is project descriptio",
-      "url": "",
-      "tags": []
+      "description": "This is personal portfolio and branding site which you are browsing through.",
+      "url": "https://rbluena.vercel.app",
+      "repo": "https://github.com/rbluena/portfolio",
+      "tags": [
+        "NextJS",
+        "Styled Component",
+        "Storybook",
+        "Figma",
+        "Google Analytics",
+        "Notion"
+      ]
     },
-    "greenrush": {}
+    "drsmile": {
+      "title": "Dr. Smile",
+      "description": "Patients booking platform connected to salesforce CRM for one of the largest dental clinic in europe.",
+      "url": "https://drsmile.de/",
+      "achievements": [
+        "Modeled few features on contentful.",
+        "Connected contentful's data with the frontend."
+      ],
+      "tags": ["React", "Gatsby", "Contentful", "Cloudflare", "GraphQL"]
+    },
+    "greenrush": {
+      "title": "GreenRush",
+      "description": "One of the largest online marketplace for cannabis patients in the US and Canada.",
+      "url": "https://greenrush.com/shop",
+      "achievements": [
+        "Laid the foundation of the front-end using ReactJS",
+        "Integrated google map API in the checkout for delivery selection.",
+        "I was introduced to the agile world with scrum framework."
+      ],
+
+      "tags": ["React", "Redux", "redux-saga", "REST API"]
+    }
   }
 }
